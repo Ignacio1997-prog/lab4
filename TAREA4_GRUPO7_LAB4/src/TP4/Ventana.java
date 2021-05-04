@@ -27,6 +27,7 @@ public class Ventana extends JFrame {
 	 * Create the frame.
 	 */
 	Ejercicio1 ej = new Ejercicio1();
+	Ejercicio3 ej3 = new Ejercicio3();
 	
 	public Ventana() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -55,7 +56,19 @@ public class Ventana extends JFrame {
 		btnEjercicio1.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		btnEjercicio1.setBounds(144, 49, 122, 33);
 		contentPane.add(btnEjercicio1);
+		
+		
+		
+		//////////////////// ejercicio3 ///////////////
+		JButton btnEjercicio3 = new JButton("Ejercicio 3");
+		btnEjercicio3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				ej3.setVisible(true);
+			}
+		});
+		btnEjercicio3.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnEjercicio3.setBackground(Color.LIGHT_GRAY);
+		btnEjercicio3.setBounds(144, 162, 122, 33);
+		contentPane.add(btnEjercicio3);
 	}
-	
-	
 }
